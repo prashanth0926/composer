@@ -1,0 +1,24 @@
+{
+  "name": "composer",
+  "version": "0.0.1",
+  "description": "Spin up multiple dependent applications using one command",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "bin": {
+    "compose": "./index.js"
+  },
+  "keywords": [
+    "kick-starter",
+    "composer",
+    "fire"
+  ],
+  "author": "Prashanth Molakala",
+  "license": "MIT",
+  "dependencies": {
+    "figlet": "^1.2.0",
+    "lodash": "^4.17.10",
+    "node-cmd": "^3.0.0"
+  }
+}
