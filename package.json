@@ -1,0 +1,24 @@
+{
+  "name": "composer",
+  "version": "0.0.1",
+  "description": "run multiple dependent applications at a single place using one command",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "bin": {
+    "compose": "./index.js"
+  },
+  "keywords": [
+    "kick-starter",
+    "composer",
+    "fire"
+  ],
+  "author": "Prashanth Molakala",
+  "license": "ISC",
+  "dependencies": {
+    "figlet": "^1.2.0",
+    "node-cmd": "^3.0.0"
+  }
+}
