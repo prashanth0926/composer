@@ -1,5 +1,5 @@
 # composer
-compose and run all your dependent apps at one place using one command
+*feeling lazy to clone, install dependencies and run several applications one after the other, no worries harness the power of composer to do all that at one place by just a single command*
 
 ### setup
 run **`npm i -g`**
