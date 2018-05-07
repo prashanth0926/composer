@@ -1,9 +1,30 @@
 # composer
-*feeling lazy to clone, install dependencies and run several applications one after the other, no worries harness the power of composer to do all that at one place by just a single command*
 
-### setup
-run **`npm i -g`**
+A tool for quickly cloning all your applications, installing dependencies and bootstrapping them instead of running them one by one from different folders.
 
-### compose and run apps
-create a configuration file refering to [config.json](config.json) with your dependent apps and their settings <br/>run **`compose `*`config-file`*`.json`** <br/> or <br/> run **`compose`** <br/>
-by default compose would look for **config.json** if the config file is not passed
+Harness the power of composer and go get a coffee while composer starts all the applications for you.
+
+
+### Installation
+
+run **`npm i -g lazy-composer`**
+
+### compose.json
+
+If you are using composer, majority of your time would be spent in this file. Please refer to the examples folder to see sample compose.json files with various types of configurations.
+
+Here are the list of options that are available within composer:
+
+TODO: add options
+
+### Usage
+
+To use composer, simply go into the folder with your composer configuration and run the following command:
+
+**`composer`**
+
+By default composer would look for **compose.json** file if no explicit path to the configuration is passed.
+
+If you have your composer configuration saved at a custom location, you can invoke composer as follows:
+
+**`composer /path/to/compose.json`**
