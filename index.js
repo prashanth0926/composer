@@ -8,7 +8,6 @@ const cmd = require('node-cmd');
 const fs = require('fs');
 const figlet = require('figlet');
 const path = require('path');
-const _ = require('lodash');
 const configFile = path.resolve(process.cwd(), process.argv[2] || 'compose.json');
 let outputFolderLocation;
 
@@ -28,7 +27,7 @@ const createDirOutput = (config) => {
 const readConfigFile = () => {
   fs.readFile(configFile, (err, data) => {
     if (err) {
-      logError('Could not load config file');
+      logError('Compose', 'file not found!');
     } else {
       try {
         const config = JSON.parse(data.toString());
@@ -36,7 +35,7 @@ const readConfigFile = () => {
         
         createDirOutput(config);
       } catch (err) {
-        logError('JSON', 'config file could not be parsed');
+        logError('JSON', 'could not be parsed!');
       }
     }
   });
@@ -51,6 +50,6 @@ figlet.text(`<<< COMPOSE >>>`, {
     console.log(err);
     return;
   }
-
+  console.log(data);
   readConfigFile();
 });
