@@ -1,6 +1,6 @@
 {
-  "name": "composer",
-  "version": "0.0.1",
+  "name": "lazy-composer",
+  "version": "1.0.1",
   "description": "Spin up multiple dependent applications using one command",
   "main": "index.js",
   "scripts": {
@@ -12,13 +12,15 @@
   "keywords": [
     "kick-starter",
     "composer",
-    "fire"
+    "lazy",
+    "lazy-compose",
+    "lazy-composer",
+    "multiple"
   ],
   "author": "Prashanth Molakala",
   "license": "MIT",
   "dependencies": {
     "figlet": "^1.2.0",
-    "lodash": "^4.17.10",
     "node-cmd": "^3.0.0"
   }
 }

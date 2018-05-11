@@ -18,9 +18,14 @@ const createDirOutput = (config) => {
 
     console.log(`${outputFolderLocation} folder created`);
 
-    localDeps(config);
-
-    gitDeps(config, outputFolderLocation);
+    if(config.appSources) {
+      if(config.appSources.localApps) {
+        localDeps(config);
+      }
+      if(config.appSources.git) {
+        gitDeps(config.appSources.git, outputFolderLocation);
+      }
+    }
   });
 };
 
