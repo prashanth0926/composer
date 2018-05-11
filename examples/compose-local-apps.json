@@ -1,0 +1,27 @@
+{
+  "outputDir": "../../composer-example-apps",
+  "appSources": {
+    "localApps": [
+      {
+        "name": "mongo",
+        "run": "mongod"
+      }
+    ],
+    "git": [
+      {
+        "gitRepo": "https://github.com/ngx-rocket/starter-kit.git",
+        "apps": [
+          {
+            "name": "ng-rocket-app",
+            "branch": "master",
+            "path": "starter-kit/",
+            "dependencies": [
+              "npm install"
+            ],
+            "run": "npm start"
+          }
+        ]
+      }
+    ]
+  }
+}

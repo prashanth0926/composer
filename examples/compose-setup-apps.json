@@ -11,8 +11,7 @@
             "path": "spring-boot-boilerplate/",
             "dependencies": [
               "brew install maven"
-            ],
-            "run": "mvn spring-boot:run"
+            ]
           }
         ]
       },
@@ -25,8 +24,7 @@
             "path": "loopback-redux-react-boilerplate/",
             "dependencies": [
               "npm install"
-            ],
-            "run": "npm start"
+            ]
           }
         ]
       },
@@ -39,8 +37,7 @@
             "path": "starter-kit/",
             "dependencies": [
               "npm install"
-            ],
-            "run": "npm start"
+            ]
           }
         ]
       }

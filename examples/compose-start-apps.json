@@ -1,0 +1,25 @@
+{
+  "outputDir": "../../composer-example-apps",
+  "appSources": {
+    "git": [
+      {
+        "apps": [
+          {
+            "name": "spring-app",
+            "path": "spring-boot-boilerplate/",
+            "run": "mvn spring-boot:run"
+          }
+        ]
+      },
+      {
+        "apps": [
+          {
+            "name": "ng-rocket-app",
+            "path": "starter-kit/",
+            "run": "npm start"
+          }
+        ]
+      }
+    ]
+  }
+}
